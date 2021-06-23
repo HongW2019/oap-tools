@@ -28,7 +28,7 @@ To create a new cluster using the uploaded bootstrap script, follow the followin
 The script supports to run TPC-DS, TPC-H and HiBench easily. Before you use **[run_benchmark.sh](./benchmark/run_benchmark.sh)**, you should add **[install_benchmark.sh](./benchmark/install_benchmark.sh)** script for bootstrap action when creating a cluster.(Note: you can refer to the step to add **[bootstrap_oap.sh](./bootstrap_oap.sh)**.)  
 ![Add bootstrap action](./imgs/add-scripts-to-bootstrap-action.PNG)
 
-If you want to run benchmark by using [OAP](https://github.com/Intel-bigdata/OAP), you should follow the [OAP user guild](https://github.com/Intel-bigdata/OAP/blob/master/docs/OAP-Installation-Guide.md) to configure "/etc/spark/conf/spark-defaults.conf" when running TPC-DS and TPC-H or configure "/opt/software/HiBench/conf/spark.conf" when running HiBench.  
+If you want to run benchmark by using [OAP](https://github.com/Intel-bigdata/OAP), you should follow the [OAP user guild](https://github.com/oap-project/oap-tools/blob/v1.1.1-spark-3.1.1/docs/OAP-Installation-Guide.md) to configure "/etc/spark/conf/spark-defaults.conf" when running TPC-DS and TPC-H or configure "/opt/software/HiBench/conf/spark.conf" when running HiBench.  
 
 ### 1. Run HiBench
 You need to follow the [Hibench Guide](https://github.com/Intel-bigdata/HiBench) to config /opt/software/HiBench/conf/spark.conf and /opt/software/HiBench/conf/hadoop.conf. This is the example to run K-means by using Intel-MLlib:
